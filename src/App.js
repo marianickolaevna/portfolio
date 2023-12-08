@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import './Hero.css';
+import './Dev.css';
+import './Designer.css';
+import './Webflow.css';
+import Hero from './hero'
+import Dev from './Dev'
+import Designer from './Designer'
+import Webflow from './Webflow'
+import React from 'react';
+
+class Main extends React.Component {
+  render() {
+    return <>
+    <Hero/>
+    <Dev/>
+    <Designer/>
+    <Webflow/>
+    </>;
+  }
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Main/>
   );
 }
 
