@@ -1,10 +1,16 @@
-import React from 'react';
+import React from "react";
+import Heading from "./heading";
+import Section from './section'
 
 class Dev extends React.Component {
-    render() {
-      return <div className='section dev-section'></div>;;
-    }
+  render() {
+    let color = 'aqua';
+    return (
+      <Section id="dev" >
+        <Heading content='web-developer' color={color} />
+      </Section>
+    );
   }
-
+}
 
 export default Dev;

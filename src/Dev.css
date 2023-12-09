@@ -1,3 +1,9 @@
 .section.dev-section {
-    background-color: aqua;
+    background-color: black;
+}
+
+.heading {
+    font-size: 4vw;
+    margin: 0px;
+    text-align: center;
 }

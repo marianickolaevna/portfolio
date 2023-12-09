@@ -1,7 +1,152 @@
+*,
+body {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+  font-family: Young Serif;
+  scroll-behavior: smooth;
+}
+
 .section {
   height: 100vh;
+  transition: scale 2000ms;
+  position: relative;
+  background-color: black;
 }
 
 .hero-section {
-  background-color: black;
+  color: white;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.m {
+  position: fixed;
+  z-index: 2;
+  top: 3vw;
+  width: 4vw;
+  left: 6vw;
+  cursor: pointer;
+  
+}
+
+.m:hover{
+  transform: scale(1.05);
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+
+  z-index: 2;
+  top: 3vw;
+  right: 6vw;
+}
+
+.icon {
+  width: 3vw;
+  margin: 1vw;
+  cursor: pointer;
+}
+
+.icon:hover {
+  
+  transform: scale(1.05);
+}
+
+.text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.h-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.hello {
+  font-size: 5vw;
+}
+
+.maria {
+  width: 12vw;
+}
+
+.dot {
+  color: #d2ff1d;
+}
+
+.whoiam {
+  font-size: 3vw;
+  margin-top: -20px;
+}
+
+.items {
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+}
+
+.item {
+  font-size: 2vw;
+  cursor: pointer;
+  text-decoration: none;
+  color: #d2ff1d;
+}
+
+.item:hover {
+  color: white;
+  transform: scale(0.9);
+}
+
+.scroll-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.scroll-wrapper:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.scroll-button {
+  font-size: 2vw;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.arrow {
+  width: 2vw;
+  height: 2vw;
+  margin-top: 5px;
+}
+
+
+.photo {
+  position: fixed;
+  z-index: 2;
+  width: 25vw;
+  left: 0px;
+  bottom: -60px;
+
+}
+
+.textme  {
+  position: fixed;
+  z-index: 2;
+  bottom: 6vw;
+  right: 7vw;
+  width: 15vw;
 }
